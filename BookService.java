@@ -11,8 +11,8 @@ public class BookService {
             stmt.setString(2, author);
             stmt.executeUpdate();
             System.out.println("Book added successfully!");
-        } catch (SQLException n) {
-            n.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }
